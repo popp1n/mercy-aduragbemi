@@ -6,7 +6,7 @@
 // -------------------------------------------------------------
 // 1. PERSONAL DETAILS — CHANGE THESE
 // -------------------------------------------------------------
-const BIRTHDAY_PERSON_NAME = "Mercy";
+const BIRTHDAY_PERSON_NAME = "Mercy ❤️";
 const YOUR_NAME = "Ademola";
 
 // Use this format: YYYY-MM-DDTHH:MM:SS
