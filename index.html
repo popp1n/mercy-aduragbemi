@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="A romantic birthday website — made with love." />
+  <title>Happy Birthday, My Love</title>
+
+  <!-- Optional fonts. Remove this line if your host blocks Google Fonts. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Allura&family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- =========================================================
+       CUSTOMIZE FIRST:
+       1. Edit names, dates, message, timeline, and reasons in script.js
+       2. Replace gallery image URLs below with your own photos
+       3. Add your own music file and update MUSIC_FILE in script.js
+       ========================================================= -->
+
+  <div class="cursor-heart" aria-hidden="true">♥</div>
+  <div id="ambient-hearts" aria-hidden="true"></div>
+
+  <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle dark mode">
+    <span class="sun-icon">☀</span>
+    <span class="moon-icon">☾</span>
+  </button>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="hero-glow glow-one" aria-hidden="true"></div>
+      <div class="hero-glow glow-two" aria-hidden="true"></div>
+
+      <div class="hero-content">
+        <p class="eyebrow">A little love letter for Mercy</p>
+        <h1>Happy Birthday,<br><span id="birthday-name">My Beautiful Damsel</span> <span class="heart-emoji">♥</span></h1>
+        <p class="hero-copy">Every day with you is my favourite chapter, but today is all about celebrating you.</p>
+
+        <button class="scroll-button" id="scroll-button" type="button">
+          <span>Begin the story</span>
+          <span class="arrow">↓</span>
+        </button>
+      </div>
+
+      <p class="hero-signature">made with endless love</p>
+    </section>
+
+    <!-- LOVE LETTER -->
+    <section class="section letter-section" id="letter">
+      <div class="section-heading reveal">
+        <p class="eyebrow">For you, always</p>
+        <h2>A Love Letter</h2>
+      </div>
+
+      <article class="letter-card reveal">
+        <div class="letter-decor decor-top" aria-hidden="true">✦</div>
+        <p class="letter-greeting">My dearest <span id="letter-name">Love</span>,</p>
+        <div class="letter-copy" id="love-letter">
+          <p>Today, I get to celebrate the beautiful person who makes ordinary moments feel like little pieces of magic. I am endlessly grateful for your heart, your warmth, and the way you make the world brighter simply by being in it.</p>
+          <p>You have changed my life in more ways than I could ever fit into one letter. You make me laugh harder, dream bigger, and feel more at home than I ever thought possible.</p>
+          <p>My hope for us is simple: more adventures, more quiet mornings, more ridiculous inside jokes, and a future filled with the kind of love that keeps choosing each other — again and again.</p>
+        </div>
+        <p class="letter-signoff">Forever grateful for you,</p>
+        <p class="letter-signature" id="your-name">Ademola A.</p>
+        <div class="letter-decor decor-bottom" aria-hidden="true">✦</div>
+      </article>
+    </section>
+
+    <!-- LOVE COUNTER -->
+    <section class="section counter-section">
+      <div class="counter-card reveal">
+        <p class="eyebrow">A little measure of forever</p>
+        <h2>Time Since We Fell in Love</h2>
+        <div class="counter-grid" aria-live="polite">
+          <div><strong id="days">0</strong><span>Days</span></div>
+          <div><strong id="hours">0</strong><span>Hours</span></div>
+          <div><strong id="minutes">0</strong><span>Minutes</span></div>
+          <div><strong id="seconds">0</strong><span>Seconds</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section class="section memories-section" id="memories">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Us, in little snapshots</p>
+        <h2>Our Memories</h2>
+      </div>
+
+      <div class="gallery">
+        <!-- Replace each image src and alt text with your own memories. -->
+        <button class="gallery-item reveal" type="button" data-image="IMG_0910.PNG?auto=format&fit=crop&w=1400&q=85">
+          <img src="IMG_0910.PNG?auto=format&fit=crop&w=900&q=85" alt="Placeholder romantic memory one" />
+          <span class="gallery-overlay">A favourite day</span>
+        </button>
+
+        <button class="gallery-item reveal" type="button" data-image="IMG_1535.jpg?auto=format&fit=crop&w=1400&q=85">
+          <img src="IMG_1535.jpg?auto=format&fit=crop&w=900&q=85" alt="Placeholder romantic memory two" />
+          <span class="gallery-overlay">A quiet moment</span>
+        </button>
+
+        <button class="gallery-item reveal" type="button" data-image="IMG_3199.jpg?auto=format&fit=crop&w=1400&q=85">
+          <img src="IMG_3199.jpg?auto=format&fit=crop&w=900&q=85" alt="Placeholder travel memory" />
+          <span class="gallery-overlay">An adventure</span>
+        </button>
+
+        <button class="gallery-item reveal" type="button" data-image="IMG_3534.JPG?auto=format&fit=crop&w=1400&q=85">
+          <img src="IMG_3534.JPG?auto=format&fit=crop&w=900&q=85" alt="Placeholder celebration memory" />
+          <span class="gallery-overlay">A celebration</span>
+        </button>
+
+        <button class="gallery-item reveal" type="button" data-image="IMG_6175.jpg?auto=format&fit=crop&w=1400&q=85">
+          <img src="IMG_6175.jpg" alt="Placeholder romantic memory five" />
+          <span class="gallery-overlay">One of many</span>
+        </button>
+
+        <button class="gallery-item reveal" type="button" data-image="IMG_7244.jpg?auto=format&fit=crop&w=1400&q=85">
+          <img src="IMG_7244.jpg?auto=format&fit=crop&w=900&q=85" alt="Placeholder romantic memory six" />
+          <span class="gallery-overlay">Always us</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- TIMELINE -->
+    <section class="section timeline-section">
+      <div class="section-heading reveal">
+        <p class="eyebrow">The moments that made us</p>
+        <h2>Our Story So Far</h2>
+      </div>
+
+      <div class="timeline" id="timeline">
+        <!-- Timeline content is created from script.js so it is easy to update. -->
+      </div>
+    </section>
+
+    <!-- REASONS -->
+    <section class="section reasons-section">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Just a few of a million</p>
+        <h2>Reasons I Love You</h2>
+      </div>
+
+      <div class="reasons-grid" id="reasons-grid">
+        <!-- Reason cards are created from script.js. -->
+      </div>
+    </section>
+
+    <!-- BIRTHDAY WISH -->
+    <section class="section wishes-section">
+      <div class="wish-card reveal">
+        <div class="wish-stars" aria-hidden="true">✦ ✧ ✦</div>
+        <p class="eyebrow">My wish for your next beautiful year</p>
+        <h2>May this year be kind to you.</h2>
+        <p>May this year bring you endless happiness, good health, exciting adventures, and all the love your heart can hold. I’ll always be here cheering you on and loving you every step of the way. Happy Birthday, my love. <span class="heart-emoji">♥</span></p>
+      </div>
+    </section>
+
+    <!-- SURPRISE -->
+    <section class="section surprise-section">
+      <div class="surprise-card reveal">
+        <p class="eyebrow">One more thing...</p>
+        <h2>A birthday surprise, just for you</h2>
+        <button class="surprise-button" id="surprise-button" type="button">Click for Your Surprise <span>🎁</span></button>
+        <div class="hidden-message" id="hidden-message" aria-live="polite">
+          <p class="message-symbol">♥</p>
+          <h3>You are my favourite kind of magic.</h3>
+          <p id="surprise-message">Thank you for being exactly who you are. Here’s to another year of laughter, adventures, and choosing each other in all the little ways that matter.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- MUSIC PLAYER -->
+  <aside class="music-player" aria-label="Music controls">
+    <button class="music-button" id="music-button" type="button" aria-label="Play music">♫</button>
+    <div>
+      <strong>Our song</strong>
+      <span id="music-status">Tap to play</span>
+    </div>
+    <!-- Add your own MP3 file and update MUSIC_FILE in script.js. -->
+    <audio id="birthday-music" preload="none"></audio>
+  </aside>
+
+  <!-- BACK TO TOP -->
+  <button class="back-to-top" id="back-to-top" type="button" aria-label="Back to top">↑</button>
+
+  <!-- LIGHTBOX -->
+  <dialog class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightbox-close" type="button" aria-label="Close image">×</button>
+    <figure>
+      <img id="lightbox-image" src="" alt="" />
+      <figcaption id="lightbox-caption"></figcaption>
+    </figure>
+  </dialog>
+
+  <footer>
+    <p>Made with endless love, just for you. <span class="heart-emoji">♥</span></p>
+    <p class="footer-forever">Forever yours.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
